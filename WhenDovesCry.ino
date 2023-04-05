@@ -114,6 +114,14 @@ int buzzer = 11;
 // so -4 means a dotted quarter note, that is, a quarter plus an eighteenth!!
 int melody[] = {
  NOTE_A5, eighth, note_A5, eigth, note_A5, eight, note_A5, dotquarter;
+
+// Johnavin Section
+
+
+// Alex Section
+
+
+// Hope section
  
 
   
