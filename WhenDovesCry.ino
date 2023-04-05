@@ -116,7 +116,7 @@ int melody[] = {
  NOTE_A5, eighth, note_A5, eigth, note_A5, eight, note_A5, dotquarter;
 
 // Johnavin Section
-
+int G4 = 392;
 
 // Alex Section
 
