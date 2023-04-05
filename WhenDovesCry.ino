@@ -125,4 +125,6 @@ int melody[] = {
  
 
 // Sofia Changes
+int E4 = 330;
+
   
