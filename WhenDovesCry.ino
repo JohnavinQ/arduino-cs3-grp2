@@ -108,16 +108,14 @@ int eighth = quarter*.5
 // change this to whichever pin you want to use
 int buzzer = 11;
 
-// notes of the moledy followed by the duration.
-// a 4 means a quarter note, 8 an eighteenth , 16 sixteenth, so on
-// !!negative numbers are used to represent dotted notes,
-// so -4 means a dotted quarter note, that is, a quarter plus an eighteenth!!
-int melody[] = {
- NOTE_A5, eighth, note_A5, eigth, note_A5, eight, note_A5, dotquarter;
 
+//turn speaker on pinmode(your pin,output)
+//to get the speaker notetone(pin,note,duration)
+//rests will be dealy(duration)
 // Johnavin Section
-int G4 = 392;
 
+pinmode(4,output);
+tone(4,NOTE_A4,eighth)
 // Alex Section
 
 
@@ -125,6 +123,6 @@ int G4 = 392;
  
 
 // Sofia Changes
-int E4 = 330;
+
 
   
