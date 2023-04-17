@@ -122,7 +122,7 @@ int G4 = 392;
 
 
 // Hope section (Ty 3)
-
+pinmode{}
 
 // Sofia Changes
 int E4 = 330;
