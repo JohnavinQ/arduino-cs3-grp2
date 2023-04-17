@@ -122,7 +122,7 @@ int G4 = 392;
 pinmode(1); //test 
 
 // Hope section (Ty 3)
-pinmode{}
+pinmode{} //test
 
 // Sofia Changes
 int E4 = 330;
