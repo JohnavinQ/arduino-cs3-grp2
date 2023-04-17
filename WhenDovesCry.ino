@@ -119,10 +119,11 @@ NOTE_A5, eighth, note_A5, eigth, note_A5, eight, note_A5, dotquarter;
 int G4 = 392;
 
 // Alex Section
-pinmode(1); //test 
+pinMode(1); //test 
 
 // Hope section (Ty 3)
-pinmode{} //test
+pinMode(3); //test
+
 
 // Sofia Changes
 int E4 = 330;
