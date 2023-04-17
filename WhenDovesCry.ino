@@ -118,7 +118,7 @@ int melody[] = {
 // Johnavin Section
 int G4 = 392;
 
-// Alex Section
+// Alex Section (Ab lines) pinmode 1
 
 
 // Hope section
