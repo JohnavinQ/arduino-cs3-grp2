@@ -93,19 +93,12 @@
 
 // change this to make the song slower or faster
 int tempo = 144;
-int quarter = (1000/60)*tempo;
-int whole = 1;
 int C4 = 262;
-int halfnote = quarter/2;
 int output = 13;
 int D4 = 294;
 int E4 = 330;
 int F4 = 349;
 int G4 = 392;
-int dotquarter = quarter*1.5;
-int sixteenth = quarter*4;
-int dothalf = quarter*3;
-int eighth = quarter*.5
 // change this to whichever pin you want to use
 int buzzer = 11;
 
@@ -129,6 +122,15 @@ int melodyA[] = {
 int melodyS[] = {
 
 }
+
+// sizeof gives the number of bytes, each int value is composed of two bytes (16 bits)
+// there are two values per note (pitch and duration), so for each note there are four bytes
+int notes = sizeof(melody) / sizeof(melody[0]) / 2;
+
+// this calculates the duration of a whole note in ms (60s/tempo)*4 beats
+int wholenote = (60000 * 4) / tempo;
+
+int divider = 0, noteDuration = 0;
 
 void setup() {
   // iterate over the notes of the melody. 
