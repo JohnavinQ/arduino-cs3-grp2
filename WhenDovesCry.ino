@@ -93,19 +93,12 @@
 
 // change this to make the song slower or faster
 int tempo = 144;
-int quarter = (1000/60)*tempo;
-int whole = 1;
 int C4 = 262;
-int halfnote = quarter/2;
 int output = 13;
 int D4 = 294;
 int E4 = 330;
 int F4 = 349;
 int G4 = 392;
-int dotquarter = quarter*1.5;
-int sixteenth = quarter*4;
-int dothalf = quarter*3;
-int eighth = quarter*.5
 // change this to whichever pin you want to use
 int buzzer = 11;
 
@@ -131,9 +124,7 @@ int melodyA[] = {
 int E4 = 330;
 
 }
-int melody S[] ={
- NOTE_A5, eighth, note_A5, eigth, note_A5, eight, note_A5, dotquarter;
-     
+
 void setup() {
   // iterate over the notes of the melody. 
   // Remember, the array is twice the number of notes (notes + durations)
