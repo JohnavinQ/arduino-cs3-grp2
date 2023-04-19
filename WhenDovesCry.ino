@@ -124,13 +124,24 @@ pinMode(1); //test
 
 // Hope section (Ty 3)
 pinMode(3) //test
-delay(int whole);
-tone(3, NOTE_C4, whole); 
-
+delay(whole)
+tone(3, NOTE_C3, whole)
+tone(3, NOTE_B4, whole)
+tone(3, NOTE_D4, whole)
+tone(3, NOTE_B4, whole)
+tone(3, NOTE_C4, whole)
+tone(3, NOTE_B4, whole)
+tone(3, NOTE_D4, whole)
+tone(3, NOTE_B3, whole)
+tone(3, NOTE_A4, eighth)
+tone(3, NOTE_A4, eighth)
+tone(3, NOTE_A4, eighth)
+tone(3, NOTE_A4, quarter)
+tone(3, NOTE_A4, eighth)
+tone(3, NOTE_B4, eighth)
 
 
 // Sofia Changes
 int E4 = 330;
-
 
 }
