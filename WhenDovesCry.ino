@@ -122,7 +122,7 @@ int melodyA[] = {
 
 // Sofia Changes
 int E4 = 330;
-
+NOTE_A6, 8, note_A5, 8, note_A5, 8, note_A5, -4;
 }
 
 void setup() {
