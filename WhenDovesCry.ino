@@ -94,7 +94,7 @@
 // change this to make the song slower or faster
 int tempo = 144;
 int quarter = (1000/60)*tempo;
-int whole = quarter*4;
+int whole = 1;
 int C4 = 262;
 int halfnote = quarter/2;
 int output = 13;
@@ -119,7 +119,7 @@ NOTE_A5, eighth, note_A5, eigth, note_A5, eight, note_A5, dotquarter;
 }
 
 int melodyH[] = {
-
+REST, 
 }
 
 int melodyA[] = {
