@@ -130,7 +130,9 @@ int melodyA[] = {
 int E4 = 330;
 
 }
-
+int melody S[] ={
+ NOTE_A5, eighth, note_A5, eigth, note_A5, eight, note_A5, dotquarter;
+     
 void setup() {
   // iterate over the notes of the melody. 
   // Remember, the array is twice the number of notes (notes + durations)
