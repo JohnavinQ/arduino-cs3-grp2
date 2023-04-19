@@ -119,9 +119,7 @@ int melody[] = {
 int G4 = 392;
 
 // Alex Section
-<<<<<<< HEAD
 
-=======
 pinMode(1); //test 
 
 // Hope section (Ty 3)
@@ -130,7 +128,6 @@ delay(int whole);
 tone(3, NOTE_C4, whole); 
 
 
->>>>>>> 17873205680e3652bd01aae22c8f4cf9ed9005fe
 
 // Hope section
  
