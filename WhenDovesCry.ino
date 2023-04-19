@@ -151,3 +151,10 @@ void setup() {
     noTone(buzzer);
   }
 }
+
+// Save
+// Git add .
+// Git status 
+// Git commit -m ""
+// Git pull / Git push origin main 
+
