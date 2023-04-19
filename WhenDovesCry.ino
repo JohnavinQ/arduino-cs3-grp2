@@ -113,35 +113,19 @@ int buzzer = 11;
 // a 4 means a quarter note, 8 an eighteenth , 16 sixteenth, so on
 // !!negative numbers are used to represent dotted notes,
 // so -4 means a dotted quarter note, that is, a quarter plus an eighteenth!!
-int melody[] = {
+int melodyJ[] = {
 NOTE_A5, eighth, note_A5, eigth, note_A5, eight, note_A5, dotquarter;
  
-// Johnavin Section
-int G4 = 392;
+}
 
-// Alex Section
-pinMode(1); //test 
+int melodyH[] = {
 
-// Hope section (Ty 3)
-pinMode(3) //test
-delay(whole)
-tone(3, NOTE_C3, whole)
-tone(3, NOTE_B4, whole)
-tone(3, NOTE_D4, whole)
-tone(3, NOTE_B4, whole)
-tone(3, NOTE_C4, whole)
-tone(3, NOTE_B4, whole)
-tone(3, NOTE_D4, whole)
-tone(3, NOTE_B3, whole)
-tone(3, NOTE_A4, eighth)
-tone(3, NOTE_A4, eighth)
-tone(3, NOTE_A4, eighth)
-tone(3, NOTE_A4, quarter)
-tone(3, NOTE_A4, eighth)
-tone(3, NOTE_B4, eighth)
+}
 
+int melodyA[] = {
 
-// Sofia Changes
-int E4 = 330;
+}
+
+int melodyS[] = {
 
 }
