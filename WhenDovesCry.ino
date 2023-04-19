@@ -94,6 +94,7 @@
 // change this to make the song slower or faster
 int tempo = 144;
 int quarter = (1000/60)*tempo;
+int whole = quarter*4;
 int C4 = 262;
 int halfnote = quarter/2;
 int output = 13;
@@ -124,7 +125,10 @@ int G4 = 392;
 pinMode(1); //test 
 
 // Hope section (Ty 3)
-pinMode(3); //test
+pinMode(3) //test
+delay(int whole);
+tone(3, NOTE_C4, whole); 
+
 
 >>>>>>> 17873205680e3652bd01aae22c8f4cf9ed9005fe
 
