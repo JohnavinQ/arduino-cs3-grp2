@@ -1,5 +1,4 @@
 
-
 #define NOTE_B0  31
 #define NOTE_C1  33
 #define NOTE_CS1 35
@@ -90,7 +89,6 @@
 #define NOTE_D8  4699
 #define NOTE_DS8 4978
 #define REST 0
-
 // change this to make the song slower or faster
 int tempo = 144;
 int C4 = 262;
@@ -106,14 +104,12 @@ int buzzer = 11;
 // a 4 means a quarter note, 8 an eighteenth , 16 sixteenth, so on
 // !!negative numbers are used to represent dotted notes,
 // so -4 means a dotted quarter note, that is, a quarter plus an eighteenth!!
-
-int melodyJ[] = {
-NOTE_A5, eighth, note_A5, eigth, note_A5, eight, note_A5, dotquarter;
- 
 // Johnavin Section
-int G4 = 392;
+int melodyJ[] = {
+NOTE_A5, 8, NOTE_A5, 8, NOTE_A5, 8, NOTE_A5, 4, //Measure 1
+}
 
-int melodyH[] = {
+int melodyH[]= {
 REST, 2, REST, 1, REST, 1, REST, 1, REST, 1, REST, 1, REST, 1, REST, 1, REST, 1,
 NOTE_C3, 1, NOTE_B4, 1,
 NOTE_D3, 1, NOTE_B3, 1, NOTE_C3, 1, //LINE 12 - 14 
@@ -149,14 +145,12 @@ NOTE_D4, 8, NOTE_D4, 8, NOTE_D4, 8, NOTE_D4, 4, NOTE_B4, 8, NOTE_B4, 8, NOTE_B4,
 NOTE_A4, -4, REST, 2, //MEASURE 53 
 NOTE_A4, 8, NOTE_A4, 8, NOTE_A4, 8, NOTE_A4, -4, NOTE_B4, 4, //MEASURE 54
 NOTE_A4, 8, NOTE_G3, 4, NOTE_A4, 4, NOTE_B4, -4, //MESURE 55
-
-
 }
 
-int melodyA[] = {
+int melodyA [] = {
 
 }
-int melodyS[] = {
+int melodyS [] = {
 
 // Sofia Changes
 int E4 = 330;
