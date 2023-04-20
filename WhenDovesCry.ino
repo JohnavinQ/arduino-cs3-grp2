@@ -107,19 +107,28 @@ int buzzer = 11;
 // !!negative numbers are used to represent dotted notes,
 // so -4 means a dotted quarter note, that is, a quarter plus an eighteenth!!
 
-int melody[] = {
+int melodyJ[] = {
 NOTE_A5, eighth, note_A5, eigth, note_A5, eight, note_A5, dotquarter;
  
 // Johnavin Section
 int G4 = 392;
 
 int melodyH[] = {
-
+REST, 2, REST, 1, REST, 1, REST, 1, REST, 1, REST, 1, REST, 1, REST, 1, REST, 1,
+NOTE_C3, 1, NOTE_B4, 1,
+NOTE_D3, 1, NOTE_B3, 1, NOTE_C3, 1, //LINE 12 - 14 
+NOTE_B4, 1, NOTE_D3, 1, NOTE_B3, 1, // LINE 15 - 17
+NOTE_A4, 8, NOTE_A4, 8, NOTE_A4, 8, NOTE_A4, 4, NOTE_A4, 8, NOTE_B4, 4, //MEASURE 18
+NOTE_G3, -4, REST, 4, REST, 8, NOTE_E3, 8, //MEASURE 19
+NOTE_G3, 8, NOTE_G3, 8, NOTE_G3, 8, NOTE_G3, 4, NOTE_G3, 8, NOTE_G3, 8, NOTE_G3, 8, NOTE_A4, 8, //MEASURE 20
+NOTE_A4, 4, REST, 4, REST, 2, //MEASURE 21
+NOTE_A4, 8, NOTE_A4, 8, 
 }
 
 int melodyA[] = {
 
 }
+int melodyS[] = {
 
 // Sofia Changes
 int E4 = 330;
