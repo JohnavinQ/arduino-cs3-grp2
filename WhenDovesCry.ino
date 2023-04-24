@@ -97,6 +97,7 @@ int D4 = 294;
 int E4 = 330;
 int F4 = 349;
 int G4 = 392;
+int E4 = 330;
 // change this to whichever pin you want to use
 int buzzer = 11;
 
@@ -107,9 +108,9 @@ int buzzer = 11;
 // Johnavin Section
 int melodyJ[] = {
 NOTE_A5, 8, NOTE_A5, 8, NOTE_A5, 8, NOTE_A5, 4, //Measure 1
-}
+};
 
-int melodyH[]= {
+int melodyH[] = {
 REST, 2, REST, 1, REST, 1, REST, 1, REST, 1, REST, 1, REST, 1, REST, 1, REST, 1,
 NOTE_C3, 1, NOTE_B4, 1,
 NOTE_D3, 1, NOTE_B3, 1, NOTE_C3, 1, //LINE 12 - 14 
@@ -145,17 +146,17 @@ NOTE_D4, 8, NOTE_D4, 8, NOTE_D4, 8, NOTE_D4, 4, NOTE_B4, 8, NOTE_B4, 8, NOTE_B4,
 NOTE_A4, -4, REST, 2, //MEASURE 53 
 NOTE_A4, 8, NOTE_A4, 8, NOTE_A4, 8, NOTE_A4, -4, NOTE_B4, 4, //MEASURE 54
 NOTE_A4, 8, NOTE_G3, 4, NOTE_A4, 4, NOTE_B4, -4, //MESURE 55
-}
+};
 
 int melodyA [] = {
 
-}
+};
+
 int melodyS [] = {
 
-// Sofia Changes
-int E4 = 330;
-NOTE_A6, 8, note_A5, 8, note_A5, 8, note_A5, -4;
-}
+// Sofia Change
+NOTE_A6, 8, NOTE_A5, 8, NOTE_A5, 8, NOTE_A5, -4
+};
 
 void setup() {
   // iterate over the notes of the melody. 
