@@ -99,8 +99,10 @@ int F4 = 349;
 int G4 = 392;
 int E4 = 330;
 // change this to whichever pin you want to use
-int buzzer = 11;
-
+int buzzer1 = 11;
+int buzzer2 = 10;
+int buzzer3 = 9;
+int buzzer4 = 8;
 // notes of the moledy followed by the duration.
 // a 4 means a quarter note, 8 an eighteenth , 16 sixteenth, so on
 // !!negative numbers are used to represent dotted notes,
@@ -200,7 +202,7 @@ void setup() {
     delay(noteDuration);
     
     // stop the waveform generation before the next note.
-    noTone(buzzer);
+    noTone(buzzer1);
   }
 }
 void setup() {
@@ -226,7 +228,7 @@ void setup() {
     delay(noteDuration);
     
     // stop the waveform generation before the next note.
-    noTone(buzzer);
+    noTone(buzzer2);
   }
 }
 void setup() {
@@ -252,7 +254,7 @@ void setup() {
     delay(noteDuration);
     
     // stop the waveform generation before the next note.
-    noTone(buzzer);
+    noTone(buzzer3);
   }
 }
 void setup() {
@@ -278,7 +280,7 @@ void setup() {
     delay(noteDuration);
     
     // stop the waveform generation before the next note.
-    noTone(buzzer);
+    noTone(buzzer4);
   }
 }
 
