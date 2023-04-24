@@ -106,7 +106,7 @@ int buzzer = 11;
 // so -4 means a dotted quarter note, that is, a quarter plus an eighteenth!!
 // Johnavin Section
 int melodyJ[] = {
-NOTE_A5, 8, NOTE_A5, 8, NOTE_A5, 8, NOTE_A5, 4, //Measure 1
+NOTE_A3, 8, NOTE_G3, 8, NOTE_E3, 16, NOTE_D3, 16, NOTE_A2, 4 //Measure 1
 }
 
 int melodyH[]= {
@@ -154,7 +154,7 @@ int melodyS [] = {
 
 // Sofia Changes
 int E4 = 330;
-NOTE_A6, 8, note_A5, 8, note_A5, 8, note_A5, -4;
+NOTE_A6, 8, note_A5, 8, note_A5, 8, note_A5, -4
 }
 
 void setup() {
