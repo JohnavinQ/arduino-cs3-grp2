@@ -151,9 +151,13 @@ NOTE_A4, 8, NOTE_G3, 4, NOTE_A4, 4, NOTE_B4, -4, //MESURE 55
 
 int melodyA [] = {
 REST, 2, REST, 1, REST, 1, REST, 1, REST, 1, REST, 1, REST, 1, REST, 1, REST, 1 //lines 1-8/1st measure of line 9
-NOTE_A4, 8, NOTE_A4, 8, NOTE_A4, 8 NOTE_A4, -4, NOTE_A4, 8, NOTE_A4, 4, NOTE_G4, -4, REST, 4, REST, 8, NOTE_E4, 8 //line 9
-NOTE_G4, 8, NOTE_G4, 8, NOTE_E4, 8, NOTE_G4, 4, NOTE_E4, 8, NOTE_E4, 8, NOTE_GS4, 4, NOTE_E4, 8, REST, 8, REST, 2 //line 12 (1-2)
-NOTE_A4, 4, NOTE_A4, 8, NOTE_A4, -4, NOTE_B4, 4 //rest of line 12
+NOTE_A4, 8, NOTE_A4, 8, NOTE_A4, 8 NOTE_A4, -4, NOTE_A4, 8, NOTE_A4, 4, NOTE_G4, -4, REST, 4, REST, 8, NOTE_E4, 8, //line 9
+NOTE_G4, 8, NOTE_G4, 8, NOTE_E4, 8, NOTE_G4, 4, NOTE_E4, 8, NOTE_E4, 8, NOTE_GS4, 4, NOTE_E4, 8, REST, 8, REST, 2, //line 12 (1-2)
+NOTE_A4, 4, NOTE_A4, 8, NOTE_A4, -4, NOTE_B4, 4, //rest of line 12
+NOTE_A4, 8, NOTE_G4, 8, NOTE_G4, 8, NOTE_A4, 4, NOTE_B4, -4, //line 15 (1st measure of line 15)
+REST, 8, NOTE_G4, 8, NOTE_G4, 8, NOTE_G4, 8, NOTE_G4, 4, REST, 8, NOTE_E4, 8, NOTE_GS4, 8, NOTE_G4, 8, NOTE_G4, 4, 
+NOTE_A4, 8, NOTE_B4, -4, //*FOR LINE 158/LINE 159* rest of line 15
+
 }
 int melodyS [] = {
 
