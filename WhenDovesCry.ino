@@ -107,8 +107,13 @@ int buzzer = 11;
 // so -4 means a dotted quarter note, that is, a quarter plus an eighteenth!!
 // Johnavin Section
 int melodyJ[] = {
+<<<<<<< HEAD
 NOTE_A5, 8, NOTE_A5, 8, NOTE_A5, 8, NOTE_A5, 4, //Measure 1
 };
+=======
+NOTE_A3, 8, NOTE_G3, 8, NOTE_E3, 16, NOTE_D3, 16, NOTE_A2, 4 //Measure 1
+}
+>>>>>>> a460262ca71e774048e515a2fbc6dad806fa1de4
 
 int melodyH[] = {
 REST, 2, REST, 1, REST, 1, REST, 1, REST, 1, REST, 1, REST, 1, REST, 1, REST, 1,
@@ -148,11 +153,12 @@ NOTE_A4, 8, NOTE_A4, 8, NOTE_A4, 8, NOTE_A4, -4, NOTE_B4, 4, //MEASURE 54
 NOTE_A4, 8, NOTE_G3, 4, NOTE_A4, 4, NOTE_B4, -4, //MESURE 55
 };
 
-int melodyA [] = { //Ab
+int melodyA [] = {
 REST, 2, REST, 1, REST, 1, REST, 1, REST, 1, REST, 1, REST, 1, REST, 1, REST, 1 //lines 1-8/1st measure of line 9
 NOTE_A4, 8, NOTE_A4, 8, NOTE_A4, 8 NOTE_A4, -4, NOTE_A4, 8, NOTE_A4, 4, NOTE_G4, -4, REST, 4, REST, 8, NOTE_E4, 8 //line 9
 NOTE_G4, 8, NOTE_G4, 8, NOTE_E4, 8, NOTE_G4, 4, NOTE_E4, 8, NOTE_E4, 8, NOTE_GS4, 4, NOTE_E4, 8, REST, 8, REST, 2 //line 12 (1-2)
 NOTE_A4, 4, NOTE_A4, 8, NOTE_A4, -4, NOTE_B4, 4 //rest of line 12
+<<<<<<< HEAD
 
 };
 
@@ -161,6 +167,15 @@ int melodyS [] = {
 // Sofia Change
 NOTE_A6, 8, NOTE_A5, 8, NOTE_A5, 8, NOTE_A5, -4
 };
+=======
+}
+int melodyS [] = {
+
+// Sofia Changes
+int E4 = 330;
+NOTE_A6, 8, note_A5, 8, note_A5, 8, note_A5, -4
+}
+>>>>>>> a460262ca71e774048e515a2fbc6dad806fa1de4
 
 void setup() {
   // iterate over the notes of the melody. 
@@ -168,7 +183,7 @@ void setup() {
   for (int thisNote = 0; thisNote < notes * 2; thisNote = thisNote + 2) {
 
     // calculates the duration of each note
-    divider = melody[thisNote + 1];
+    divider = melodyH[thisNote + 1];
     if (divider > 0) {
       // regular note, just proceed
       noteDuration = (wholenote) / divider;
@@ -179,7 +194,85 @@ void setup() {
     }
 
     // we only play the note for 90% of the duration, leaving 10% as a pause
-    tone(buzzer, melody[thisNote], noteDuration*0.9);
+    tone(buzzer1, melodyH[thisNote], noteDuration*0.9);
+
+    // Wait for the specief duration before playing the next note.
+    delay(noteDuration);
+    
+    // stop the waveform generation before the next note.
+    noTone(buzzer);
+  }
+}
+void setup() {
+  // iterate over the notes of the melody. 
+  // Remember, the array is twice the number of notes (notes + durations)
+  for (int thisNote = 0; thisNote < notes * 2; thisNote = thisNote + 2) {
+
+    // calculates the duration of each note
+    divider = melodyJ[thisNote + 1];
+    if (divider > 0) {
+      // regular note, just proceed
+      noteDuration = (wholenote) / divider;
+    } else if (divider < 0) {
+      // dotted notes are represented with negative durations!!
+      noteDuration = (wholenote) / abs(divider);
+      noteDuration *= 1.5; // increases the duration in half for dotted notes
+    }
+
+    // we only play the note for 90% of the duration, leaving 10% as a pause
+    tone(buzzer2, melodyJ[thisNote], noteDuration*0.9);
+
+    // Wait for the specief duration before playing the next note.
+    delay(noteDuration);
+    
+    // stop the waveform generation before the next note.
+    noTone(buzzer);
+  }
+}
+void setup() {
+  // iterate over the notes of the melody. 
+  // Remember, the array is twice the number of notes (notes + durations)
+  for (int thisNote = 0; thisNote < notes * 2; thisNote = thisNote + 2) {
+
+    // calculates the duration of each note
+    divider = melodyA[thisNote + 1];
+    if (divider > 0) {
+      // regular note, just proceed
+      noteDuration = (wholenote) / divider;
+    } else if (divider < 0) {
+      // dotted notes are represented with negative durations!!
+      noteDuration = (wholenote) / abs(divider);
+      noteDuration *= 1.5; // increases the duration in half for dotted notes
+    }
+
+    // we only play the note for 90% of the duration, leaving 10% as a pause
+    tone(buzzer3, melodyA[thisNote], noteDuration*0.9);
+
+    // Wait for the specief duration before playing the next note.
+    delay(noteDuration);
+    
+    // stop the waveform generation before the next note.
+    noTone(buzzer);
+  }
+}
+void setup() {
+  // iterate over the notes of the melody. 
+  // Remember, the array is twice the number of notes (notes + durations)
+  for (int thisNote = 0; thisNote < notes * 2; thisNote = thisNote + 2) {
+
+    // calculates the duration of each note
+    divider = melodyS[thisNote + 1];
+    if (divider > 0) {
+      // regular note, just proceed
+      noteDuration = (wholenote) / divider;
+    } else if (divider < 0) {
+      // dotted notes are represented with negative durations!!
+      noteDuration = (wholenote) / abs(divider);
+      noteDuration *= 1.5; // increases the duration in half for dotted notes
+    }
+
+    // we only play the note for 90% of the duration, leaving 10% as a pause
+    tone(buzzer4, melodyS[thisNote], noteDuration*0.9);
 
     // Wait for the specief duration before playing the next note.
     delay(noteDuration);
@@ -195,4 +288,4 @@ void setup() {
 // Git commit -m ""
 // Git pull / Git push origin main 
 
-// alex brand new test
+// alex brand new test.
