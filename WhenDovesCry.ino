@@ -158,6 +158,7 @@ NOTE_A4, 4, NOTE_A4, 8, NOTE_A4, -4, NOTE_B4, 4, //rest of line 12
 NOTE_A4, 8, NOTE_G4, 8, NOTE_G4, 8, NOTE_A4, 4, NOTE_B4, -4, //line 15 (1st measure of line 15)
 REST, 8, NOTE_G4, 8, NOTE_G4, 8, NOTE_G4, 8, NOTE_G4, 4, REST, 8, NOTE_E4, 8, NOTE_GS4, 8, NOTE_G4, 8, NOTE_G4, 4, 
 NOTE_A4, 8, NOTE_B4, -4, //*FOR LINE 158/LINE 159* rest of line 15
+REST, 4, REST, 8, NOTE_G4, 4, NOTE_A4, -4, REST, 4, REST, 8, NOTE_C5, 4, NOTE_B4, -4 //1st half of line 18
 
 }
 int melodyS [] = {
