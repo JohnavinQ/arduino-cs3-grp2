@@ -97,6 +97,7 @@ int D4 = 294;
 int E4 = 330;
 int F4 = 349;
 int G4 = 392;
+int E4 = 330;
 // change this to whichever pin you want to use
 int buzzer1 = 11;
 int buzzer2 = 10;
@@ -122,7 +123,7 @@ NOTE_B2, 4 NOTE_B2, 4, NOTE_D3, 4, NOTE_C3, 4, NOTE_A3, 8, NOTE_C3, 8, NOTE_D3, 
   NOTE_A3, 8, NOTE_C3, 8, NOTE_D3, 8, NOTE_E3, 8,NOTE_A3, 8, NOTE_C3, 8, NOTE_D3, 8, NOTE_E3, 8, NOTE_E3, 8, REST, -4
 }
 
-int melodyH[]= {
+int melodyH[] = {
 REST, 2, REST, 1, REST, 1, REST, 1, REST, 1, REST, 1, REST, 1, REST, 1, REST, 1,
 NOTE_C3, 1, NOTE_B4, 1,
 NOTE_D3, 1, NOTE_B3, 1, NOTE_C3, 1, //LINE 12 - 14 
@@ -158,20 +159,21 @@ NOTE_D4, 8, NOTE_D4, 8, NOTE_D4, 8, NOTE_D4, 4, NOTE_B4, 8, NOTE_B4, 8, NOTE_B4,
 NOTE_A4, -4, REST, 2, //MEASURE 53 
 NOTE_A4, 8, NOTE_A4, 8, NOTE_A4, 8, NOTE_A4, -4, NOTE_B4, 4, //MEASURE 54
 NOTE_A4, 8, NOTE_G3, 4, NOTE_A4, 4, NOTE_B4, -4, //MESURE 55
-}
+};
 
 int melodyA [] = {
-REST, 2, REST, 1, REST, 1, REST, 1, REST, 1, REST, 1, REST, 1, REST, 1, REST, 1 //lines 1-8/1st measure of line 9
-NOTE_A4, 8, NOTE_A4, 8, NOTE_A4, 8 NOTE_A4, -4, NOTE_A4, 8, NOTE_A4, 4, NOTE_G4, -4, REST, 4, REST, 8, NOTE_E4, 8 //line 9
-NOTE_G4, 8, NOTE_G4, 8, NOTE_E4, 8, NOTE_G4, 4, NOTE_E4, 8, NOTE_E4, 8, NOTE_GS4, 4, NOTE_E4, 8, REST, 8, REST, 2 //line 12 (1-2)
+REST, 2, REST, 1, REST, 1, REST, 1, REST, 1, REST, 1, REST, 1, REST, 1, REST, 1, //lines 1-8/1st measure of line 9
+NOTE_A4, 8, NOTE_A4, 8, NOTE_A4, 8, NOTE_A4, -4, NOTE_A4, 8, NOTE_A4, 4, NOTE_G4, -4, REST, 4, REST, 8, NOTE_E4, 8, //line 9
+NOTE_G4, 8, NOTE_G4, 8, NOTE_E4, 8, NOTE_G4, 4, NOTE_E4, 8, NOTE_E4, 8, NOTE_GS4, 4, NOTE_E4, 8, REST, 8, REST, 2, //line 12 (1-2)
 NOTE_A4, 4, NOTE_A4, 8, NOTE_A4, -4, NOTE_B4, 4 //rest of line 12
-}
+
+};
+
 int melodyS [] = {
 
-// Sofia Changes
-int E4 = 330;
-NOTE_A6, 8, note_A5, 8, note_A5, 8, note_A5, -4
-}
+// Sofia Change
+NOTE_A6, 8, NOTE_A5, 8, NOTE_A5, 8, NOTE_A5, -4
+};
 
 void setup() {
   // iterate over the notes of the melody. 
