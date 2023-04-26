@@ -158,8 +158,16 @@ NOTE_A4, 4, NOTE_A4, 8, NOTE_A4, -4, NOTE_B4, 4, //rest of line 12
 NOTE_A4, 8, NOTE_G4, 8, NOTE_G4, 8, NOTE_A4, 4, NOTE_B4, -4, //line 15 (1st measure of line 15)
 REST, 8, NOTE_G4, 8, NOTE_G4, 8, NOTE_G4, 8, NOTE_G4, 4, REST, 8, NOTE_E4, 8, NOTE_GS4, 8, NOTE_G4, 8, NOTE_G4, 4, 
 NOTE_A4, 8, NOTE_B4, -4, //*FOR LINE 158/LINE 159* rest of line 15
-REST, 4, REST, 8, NOTE_G4, 4, NOTE_A4, -4, REST, 4, REST, 8, NOTE_C5, 4, NOTE_B4, -4 //1st half of line 18
-
+REST, 4, REST, 8, NOTE_G4, 4, NOTE_A4, -4, REST, 4, REST, 8, NOTE_C5, 4, NOTE_B4, -4, //1st half of line 18
+REST, 8, REST, 4, NOTE_G4, 4, NOTE_E4, -4, REST, 8, REST, 8, NOTE_E5, 4, NOTE_D5, -8, NOTE_C5, 16, NOTE_A4, 4, //rest of line 18
+REST, 8, REST, 4, NOTE_G4, 4, NOTE_A4, -4, REST, 8, REST, 4, NOTE_C5, 4, NOTE_B4, -4, //1st half of line 22
+REST, 8, REST, 4, NOTE_G4, 4, NOTE_E4, -4, REST, 8, REST, 4, NOTE_D4, 4, NOTE_E4, -4, //rest of line 22
+NOTE_A4, 8, NOTE_A4, 8, NOTE_A4, 8, NOTE_A4, 4, NOTE_A4, 8, NOTE_B4, 8, NOTE_A4, 4, NOTE_G4, -4, REST, 2, //line 26 (1-2)
+NOTE_G4, 8, NOTE_G4, 8, NOTE_G4, 8, NOTE_G4, 4, NOTE_D5, 4, NOTE_E5, 8, //rest of line 26
+NOTE_E5, 2, REST, 2, NOTE_A4, 8, NOTE_A4, 8, NOTE_A4, 8, NOTE_A4, 4, NOTE_A4, 8, NOTE_B4, 8, NOTE_A4, 4, NOTE_G4, -4, //line 29
+REST, 2, //rest of line 29
+NOTE_G4, 8, NOTE_G4, 8, NOTE_G4, 8, NOTE_G4, 8, NOTE_G4, 4, NOTE_G4, 4, REST, 8, NOTE_E4, 4, NOTE_G4, -4, NOTE_A4, 4, //line 32 (1-2)
+REST, 2, REST, 4, NOTE_C5, 4, NOTE_B4, 1, NOTE_B4, -2, NOTE_B4, 4, NOTE_A4, 1, REST, 1 //END OF MY PART
 }
 int melodyS [] = {
 
