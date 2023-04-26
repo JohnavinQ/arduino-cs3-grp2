@@ -158,9 +158,10 @@ NOTE_A4, 4, NOTE_A4, 8, NOTE_A4, -4, NOTE_B4, 4 //rest of line 12
 int melodyS [] = {
 
 // Sofia Changes
-NOTE_A3, 8, note_A3, 8, note_A3, 8, note_A3, -4, NOTE_B3, 8, 
-NOTE_A3, 4, NOTE_G3, -8, REST, -4, NOTE_E3, 8, NOTE_G3, 8, NOTE_G3, 8, NOTE_G3, 8, NOTE_G3, 8,
+rest, 2, NOTE_A3, 8, note_A3, 8, note_A3, 8, note_A3, -4, NOTE_B3, 8, 
+NOTE_A3, 4, NOTE_G3, -4, REST, 4, NOTE_E3, 8, NOTE_G3, 8, NOTE_G3, 8, NOTE_G3, 8, NOTE_G3, 8,
 NOTE_G3, -4, NOTE_G3, 16, NOTE_G3, 16,
+note_G3, 4, note_E3, NOTE_A3, 8, note_A3, 8, note_A3, 8, note_A3, -4, NOTE_B3, 8, 
 }
 
 void setup() {
