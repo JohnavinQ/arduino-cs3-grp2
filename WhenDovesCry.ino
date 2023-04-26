@@ -97,6 +97,7 @@ int D4 = 294;
 int E4 = 330;
 int F4 = 349;
 int G4 = 392;
+int E4 = 330;
 // change this to whichever pin you want to use
 int buzzer1 = 11;
 int buzzer2 = 10;
@@ -108,10 +109,22 @@ int buzzer4 = 8;
 // so -4 means a dotted quarter note, that is, a quarter plus an eighteenth!!
 // Johnavin Section
 int melodyJ[] = {
-NOTE_A3, 8, NOTE_G3, 8, NOTE_E3, 16, NOTE_D3, 16, NOTE_A2, 4 //Measure 1
+NOTE_A3, 8, NOTE_G3, 8, NOTE_E3, 16, NOTE_D3, 16, NOTE_A2, 4, REST, 4, REST, 2, REST, 1, //Measure 1
+REST, 1, REST, 2, NOTE_E3, 8, NOTE_E3, 8, NOTE_E3, 16, NOTE_D3, 16, NOTE_C3, 8, NOTE_A2, 4, REST, 4, REST, 2,
+REST, 1, REST, 1, REST, 2, NOTE_E3, 8, NOTE_E3, 8, NOTE_E3, 16, NOTE_D3, 16, NOTE_C3, 8, NOTE_A2, 1, NOTE_D3, 1,
+NOTE_B2, 1, NOTE_E2, 2, NOTE_E3, 8. NOTE_E3, 8, NOTE_E3, 16, NOTE_D3, 16, NOTE_C3, 8, NOTE_A2, 1, NOTE_D3, 1, NOTE_B2, 1,
+NOTE_E2, 2, NOTE_E3, 8, NOTE_E3, 8, NOTE_E3, 16, NOTE_D3, 16, NOTE_C3, 8, NOTE_C3, 8,NOTE_C3, 8,NOTE_C3, 8, NOTE_C3,4,
+NOTE_C3, 8, NOTE_D3, 8, NOTE_C3,4,  NOTE_B2, -4, REST, -4, NOTE_B2, 8, NOTE_D3, 8, NOTE_D3, 8, NOTE_D3, 8, NOTE_D3, 4,  NOTE_D3, 8, NOTE_E3, 8,
+NOTE_B2, 8, NOTE_C3, 4, REST, -2, NOTE_C3, 8, NOTE_C3, 8,NOTE_C3, 8,NOTE_C3, 8, NOTE_C3,4,
+NOTE_C3, 8, NOTE_D3, 8, NOTE_C3,4,  NOTE_B2, -4, REST, 2, NOTE_G3, 8, NOTE_F3, 8, NOTE_E3, 8, NOTE_D3, 4, NOTE_B2, 4, NOTE_D3, 8, 
+NOTE_B2, 4 NOTE_B2, 4, NOTE_D3, 4, NOTE_C3, 4, NOTE_A3, 8, NOTE_C3, 8, NOTE_D3, 8, NOTE_E3, 8, NOTE_A3, 8, NOTE_C3, 8, NOTE_D3, 8, NOTE_E3, 8,
+ NOTE_A3, 8, NOTE_C3, 8, NOTE_D3, 8, NOTE_E3, 8, NOTE_D3, 8, REST, -4, NOTE_G3, 8, NOTE_C3, 8, NOTE_D3, 8, NOTE_E3, 8,  NOTE_G3, 8, NOTE_C3, 8, NOTE_D3, 8, NOTE_E3, 8,
+  NOTE_G3, 8, NOTE_C3, 8, NOTE_D3, 8, NOTE_E3, 8, NOTE_D3, 8, REST, -4, NOTE_A3, 8, NOTE_C3, 8, NOTE_D3, 8, NOTE_E3, 8,
+  NOTE_A3, 8, NOTE_C3, 8, NOTE_D3, 8, NOTE_E3, 8,NOTE_A3, 8, NOTE_C3, 8, NOTE_D3, 8, NOTE_E3, 8, NOTE_E3, 8, REST, -4, REST, 1, REST, 1, 
+  REST, 1, REST, 1, REST, 1, REST, 1, NOTE_E3, 4, NOTE_C3, 4, NOTE_A2, 4, NOTE_A2, 4, REST, -4, NOTE_FS2, 8
 }
 
-int melodyH[]= {
+int melodyH[] = {
 REST, 2, REST, 1, REST, 1, REST, 1, REST, 1, REST, 1, REST, 1, REST, 1, REST, 1,
 NOTE_C3, 1, NOTE_B4, 1,
 NOTE_D3, 1, NOTE_B3, 1, NOTE_C3, 1, //LINE 12 - 14 
@@ -147,21 +160,32 @@ NOTE_D4, 8, NOTE_D4, 8, NOTE_D4, 8, NOTE_D4, 4, NOTE_B4, 8, NOTE_B4, 8, NOTE_B4,
 NOTE_A4, -4, REST, 2, //MEASURE 53 
 NOTE_A4, 8, NOTE_A4, 8, NOTE_A4, 8, NOTE_A4, -4, NOTE_B4, 4, //MEASURE 54
 NOTE_A4, 8, NOTE_G3, 4, NOTE_A4, 4, NOTE_B4, -4, //MESURE 55
-}
+};
 
 int melodyA [] = {
 REST, 2, REST, 1, REST, 1, REST, 1, REST, 1, REST, 1, REST, 1, REST, 1, REST, 1 //lines 1-8/1st measure of line 9
-NOTE_A4, 8, NOTE_A4, 8, NOTE_A4, 8 NOTE_A4, -4, NOTE_A4, 8, NOTE_A4, 4, NOTE_G4, -4, REST, 4, REST, 8, NOTE_E4, 8 //line 9
-NOTE_G4, 8, NOTE_G4, 8, NOTE_E4, 8, NOTE_G4, 4, NOTE_E4, 8, NOTE_E4, 8, NOTE_GS4, 4, NOTE_E4, 8, REST, 8, REST, 2 //line 12 (1-2)
-NOTE_A4, 4, NOTE_A4, 8, NOTE_A4, -4, NOTE_B4, 4 //rest of line 12
+NOTE_A4, 8, NOTE_A4, 8, NOTE_A4, 8 NOTE_A4, -4, NOTE_A4, 8, NOTE_A4, 4, NOTE_G4, -4, REST, 4, REST, 8, NOTE_E4, 8, //line 9
+NOTE_G4, 8, NOTE_G4, 8, NOTE_E4, 8, NOTE_G4, 4, NOTE_E4, 8, NOTE_E4, 8, NOTE_GS4, 4, NOTE_E4, 8, REST, 8, REST, 2, //line 12 (1-2)
+NOTE_A4, 4, NOTE_A4, 8, NOTE_A4, -4, NOTE_B4, 4, //rest of line 12
+NOTE_A4, 8, NOTE_G4, 8, NOTE_G4, 8, NOTE_A4, 4, NOTE_B4, -4, //line 15 (1st measure of line 15)
+REST, 8, NOTE_G4, 8, NOTE_G4, 8, NOTE_G4, 8, NOTE_G4, 4, REST, 8, NOTE_E4, 8, NOTE_GS4, 8, NOTE_G4, 8, NOTE_G4, 4, 
+NOTE_A4, 8, NOTE_B4, -4, //*FOR LINE 158/LINE 159* rest of line 15
+REST, 4, REST, 8, NOTE_G4, 4, NOTE_A4, -4, REST, 4, REST, 8, NOTE_C5, 4, NOTE_B4, -4, //1st half of line 18
+REST, 8, REST, 4, NOTE_G4, 4, NOTE_E4, -4, REST, 8, REST, 8, NOTE_E5, 4, NOTE_D5, -8, NOTE_C5, 16, NOTE_A4, 4, //rest of line 18
+REST, 8, REST, 4, NOTE_G4, 4, NOTE_A4, -4, REST, 8, REST, 4, NOTE_C5, 4, NOTE_B4, -4, //1st half of line 22
+REST, 8, REST, 4, NOTE_G4, 4, NOTE_E4, -4, REST, 8, REST, 4, NOTE_D4, 4, NOTE_E4, -4, //rest of line 22
+NOTE_A4, 8, NOTE_A4, 8, NOTE_A4, 8, NOTE_A4, 4, NOTE_A4, 8, NOTE_B4, 8, NOTE_A4, 4, NOTE_G4, -4, REST, 2, //line 26 (1-2)
+NOTE_G4, 8, NOTE_G4, 8, NOTE_G4, 8, NOTE_G4, 4, NOTE_D5, 4, NOTE_E5, 8, //rest of line 26
+NOTE_E5, 2, REST, 2, NOTE_A4, 8, NOTE_A4, 8, NOTE_A4, 8, NOTE_A4, 4, NOTE_A4, 8, NOTE_B4, 8, NOTE_A4, 4, NOTE_G4, -4, //line 29
+REST, 2, //rest of line 29
+NOTE_G4, 8, NOTE_G4, 8, NOTE_G4, 8, NOTE_G4, 8, NOTE_G4, 4, NOTE_G4, 4, REST, 8, NOTE_E4, 4, NOTE_G4, -4, NOTE_A4, 4, //line 32 (1-2)
+REST, 2, REST, 4, NOTE_C5, 4, NOTE_B4, 1, NOTE_B4, -2, NOTE_B4, 4, NOTE_A4, 1, REST, 1 //END OF MY PART
 }
 int melodyS [] = {
 
 // Sofia Changes
-rest, 2, NOTE_A3, 8, note_A3, 8, note_A3, 8, note_A3, -4, NOTE_B3, 8, 
-NOTE_A3, 4, NOTE_G3, -4, REST, 4, NOTE_E3, 8, NOTE_G3, 8, NOTE_G3, 8, NOTE_G3, 8, NOTE_G3, 8,
-NOTE_G3, -4, NOTE_G3, 16, NOTE_G3, 16,
-note_G3, 4, note_E3, NOTE_A3, 8, note_A3, 8, note_A3, 8, note_A3, -4, NOTE_B3, 8, 
+int E4 = 330;
+NOTE_A6, 8, note_A5, 8, note_A5, 8, note_A5, -4
 }
 
 void setup() {
