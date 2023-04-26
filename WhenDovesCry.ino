@@ -184,8 +184,10 @@ REST, 2, REST, 4, NOTE_C5, 4, NOTE_B4, 1, NOTE_B4, -2, NOTE_B4, 4, NOTE_A4, 1, R
 int melodyS [] = {
 
 // Sofia Changes
-int E4 = 330;
-NOTE_A6, 8, note_A5, 8, note_A5, 8, note_A5, -4
+rest, 2, NOTE_A3, 8, note_A3, 8, note_A3, 8, note_A3, -4, NOTE_B3, 8,
+NOTE_A3, 4, NOTE_G3, -4, REST, 4, NOTE_E3, 8, NOTE_G3, 8, NOTE_G3, 8, NOTE_G3, 8, NOTE_G3, 8,
+NOTE_G3, -4, NOTE_G3, 16, NOTE_G3, 16,
+note_G3, 4, note_E3, NOTE_A3, 8, note_A3, 8, note_A3, 8, note_A3, -4, NOTE_B3, 8,
 }
 
 void setup() {
